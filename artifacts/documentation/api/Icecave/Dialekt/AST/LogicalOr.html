@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Icecave\Dialekt\AST\LogicalOr | icecave/dialekt API</title>
+                    <link rel="stylesheet" type="text/css" href="../../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../../classes.html">Classes</a></li>
+                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">icecave/dialekt API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../../Icecave/Dialekt/AST.html">Icecave\Dialekt\AST</a>\LogicalOr</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>LogicalOr</strong>        extends <a href="../../../Icecave/Dialekt/AST/AbstractPolyadicOperator.html"><abbr title="Icecave\Dialekt\AST\AbstractPolyadicOperator">AbstractPolyadicOperator</abbr></a></p>
+
+            <div class="description">
+            <p>The logical OR operator.</p>
+            <p>
+</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>()
+                    <p>
+</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../Icecave/Dialekt/AST/AbstractPolyadicOperator.html#method___construct"><abbr title="Icecave\Dialekt\AST\AbstractPolyadicOperator">AbstractPolyadicOperator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_add">add</a>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression)
+                    <p>Add a child expression to this operator.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../Icecave/Dialekt/AST/AbstractPolyadicOperator.html#method_add"><abbr title="Icecave\Dialekt\AST\AbstractPolyadicOperator">AbstractPolyadicOperator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <abbr title="Icecave\Dialekt\AST\array&lt;ExpressionInterface&gt;">array&lt;ExpressionInterface&gt;</abbr>
+                </td>
+                <td class="last">
+                    <a href="#method_children">children</a>()
+                    <p>Fetch an array of this operator's children.</p>
+                </td>
+                <td><small>from&nbsp;<a href="../../../Icecave/Dialekt/AST/AbstractPolyadicOperator.html#method_children"><abbr title="Icecave\Dialekt\AST\AbstractPolyadicOperator">AbstractPolyadicOperator</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    mixed
+                </td>
+                <td class="last">
+                    <a href="#method_accept">accept</a>(<a href="../../../Icecave/Dialekt/AST/VisitorInterface.html"><abbr title="Icecave\Dialekt\AST\VisitorInterface">VisitorInterface</abbr></a> $visitor)
+                    <p>Pass this node to the appropriate method on the given visitor.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">in <a href="../../../Icecave/Dialekt/AST/AbstractPolyadicOperator.html#method___construct"><abbr title="Icecave\Dialekt\AST\AbstractPolyadicOperator">AbstractPolyadicOperator</abbr></a> at line 12</div>
+        <code>            public            
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_add">
+        <div class="location">in <a href="../../../Icecave/Dialekt/AST/AbstractPolyadicOperator.html#method_add"><abbr title="Icecave\Dialekt\AST\AbstractPolyadicOperator">AbstractPolyadicOperator</abbr></a> at line 26</div>
+        <code>            public            
+    <strong>add</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression)</code>
+    </h3>
+    <div class="details">
+        <p>Add a child expression to this operator.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a></td>
+                <td>$expression</td>
+                <td>The expression to add.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_children">
+        <div class="location">in <a href="../../../Icecave/Dialekt/AST/AbstractPolyadicOperator.html#method_children"><abbr title="Icecave\Dialekt\AST\AbstractPolyadicOperator">AbstractPolyadicOperator</abbr></a> at line 36</div>
+        <code>            public            <abbr title="Icecave\Dialekt\AST\array&lt;ExpressionInterface&gt;">array&lt;ExpressionInterface&gt;</abbr>
+    <strong>children</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch an array of this operator's children.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><abbr title="Icecave\Dialekt\AST\array&lt;ExpressionInterface&gt;">array&lt;ExpressionInterface&gt;</abbr></td>
+            <td>The operator's child expressions.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_accept">
+        <div class="location">at line 16</div>
+        <code>            public            mixed
+    <strong>accept</strong>(<a href="../../../Icecave/Dialekt/AST/VisitorInterface.html"><abbr title="Icecave\Dialekt\AST\VisitorInterface">VisitorInterface</abbr></a> $visitor)</code>
+    </h3>
+    <div class="details">
+        <p>Pass this node to the appropriate method on the given visitor.</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../Icecave/Dialekt/AST/VisitorInterface.html"><abbr title="Icecave\Dialekt\AST\VisitorInterface">VisitorInterface</abbr></a></td>
+                <td>$visitor</td>
+                <td>The visitor to dispatch to.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The visitation result.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
