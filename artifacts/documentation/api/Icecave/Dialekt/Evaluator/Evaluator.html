@@ -23,13 +23,8 @@
     </div>
         <div class="content">
                 <p>class    <strong>Evaluator</strong>        implements
-        <a href="../../../Icecave/Dialekt/AST/VisitorInterface.html"><abbr title="Icecave\Dialekt\AST\VisitorInterface">VisitorInterface</abbr></a></p>
+        <a href="../../../Icecave/Dialekt/Evaluator/EvaluatorInterface.html"><abbr title="Icecave\Dialekt\Evaluator\EvaluatorInterface">EvaluatorInterface</abbr></a>, <a href="../../../Icecave/Dialekt/AST/VisitorInterface.html"><abbr title="Icecave\Dialekt\AST\VisitorInterface">VisitorInterface</abbr></a></p>
 
-            <div class="description">
-            <p>Match parsed expressions against string tags.</p>
-            <p>
-</p>
-        </div>
     
     
     
@@ -41,7 +36,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>(boolean $caseSensitive = false, boolean $emptyExpressionMatchesEverything = false)
+                    <a href="#method___construct">__construct</a>(boolean $caseSensitive = false, boolean $emptyIsWildcard = false)
                     <p>
 </p>
                 </td>
@@ -52,38 +47,8 @@
                     boolean
                 </td>
                 <td class="last">
-                    <a href="#method_match">match</a>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, string $tag)
-                    <p>Check if an expression evaluates to true for a single tag.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    boolean
-                </td>
-                <td class="last">
-                    <a href="#method_matchAll">matchAll</a>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, <abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr> $tags)
-                    <p>Check if an expression evaluates to true for all of the given tags.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    boolean
-                </td>
-                <td class="last">
-                    <a href="#method_matchAny">matchAny</a>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, <abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr> $tags)
-                    <p>Check if an expression evaluates to true for any of the given tags.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="Icecave\Dialekt\Evaluator\tuple&lt;array,array&gt;">tuple&lt;array,array&gt;</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_partition">partition</a>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, <abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr> $tags)
-                    <p>Partition a traversible set of tags into two arrays of matching and non-matching tags based on an expression.</p>
+                    <a href="#method_evaluate">evaluate</a>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, <abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr> $tags)
+                    <p>Evaluate an expression against a single tag.</p>
                 </td>
                 <td></td>
             </tr>
@@ -173,9 +138,9 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 24</div>
+        <div class="location">at line 21</div>
         <code>            public            
-    <strong>__construct</strong>(boolean $caseSensitive = false, boolean $emptyExpressionMatchesEverything = false)</code>
+    <strong>__construct</strong>(boolean $caseSensitive = false, boolean $emptyIsWildcard = false)</code>
     </h3>
     <div class="details">
         <p>
@@ -193,7 +158,7 @@
             </tr>
                     <tr>
                 <td>boolean</td>
-                <td>$emptyExpressionMatchesEverything</td>
+                <td>$emptyIsWildcard</td>
                 <td>True if an empty expression matches all tags; or false to match none.</td>
             </tr>
             </table>
@@ -204,13 +169,13 @@
                     </div>
     </div>
 
-                <h3 id="method_match">
-        <div class="location">at line 40</div>
+                <h3 id="method_evaluate">
+        <div class="location">at line 35</div>
         <code>            public            boolean
-    <strong>match</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, string $tag)</code>
+    <strong>evaluate</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, <abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr> $tags)</code>
     </h3>
     <div class="details">
-        <p>Check if an expression evaluates to true for a single tag.</p>
+        <p>Evaluate an expression against a single tag.</p>
         <p>
 </p>
         <div class="tags">
@@ -223,9 +188,9 @@
                 <td>The expression to evaluate.</td>
             </tr>
                     <tr>
-                <td>string</td>
-                <td>$tag</td>
-                <td>The tag to match.</td>
+                <td><abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr></td>
+                <td>$tags</td>
+                <td>The set of tags to evaluate against.</td>
             </tr>
             </table>
 
@@ -244,128 +209,8 @@
                     </div>
     </div>
 
-                <h3 id="method_matchAll">
-        <div class="location">at line 57</div>
-        <code>            public            boolean
-    <strong>matchAll</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, <abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr> $tags)</code>
-    </h3>
-    <div class="details">
-        <p>Check if an expression evaluates to true for all of the given tags.</p>
-        <p>
-</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a></td>
-                <td>$expression</td>
-                <td>The expression to evaluate.</td>
-            </tr>
-                    <tr>
-                <td><abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr></td>
-                <td>$tags</td>
-                <td>The tags to match.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>boolean</td>
-            <td>True if the expression matches all of the given tags; otherwise, false.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_matchAny">
-        <div class="location">at line 76</div>
-        <code>            public            boolean
-    <strong>matchAny</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, <abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr> $tags)</code>
-    </h3>
-    <div class="details">
-        <p>Check if an expression evaluates to true for any of the given tags.</p>
-        <p>
-</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a></td>
-                <td>$expression</td>
-                <td>The expression to evaluate.</td>
-            </tr>
-                    <tr>
-                <td><abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr></td>
-                <td>$tags</td>
-                <td>The tags to match.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td>boolean</td>
-            <td>True if the expression matches any of the given tags; otherwise, false.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-                <h3 id="method_partition">
-        <div class="location">at line 96</div>
-        <code>            public            <abbr title="Icecave\Dialekt\Evaluator\tuple&lt;array,array&gt;">tuple&lt;array,array&gt;</abbr>
-    <strong>partition</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, <abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr> $tags)</code>
-    </h3>
-    <div class="details">
-        <p>Partition a traversible set of tags into two arrays of matching and non-matching tags based on an expression.</p>
-        <p>
-</p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td><a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a></td>
-                <td>$expression</td>
-                <td>The expression used to partition the array.</td>
-            </tr>
-                    <tr>
-                <td><abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr></td>
-                <td>$tags</td>
-                <td>The array of tags to partition.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><abbr title="Icecave\Dialekt\Evaluator\tuple&lt;array,array&gt;">tuple&lt;array,array&gt;</abbr></td>
-            <td>A 2-tuple containing arrays of the matched and unmatched tags.</td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
                 <h3 id="method_visitLogicalAnd">
-        <div class="location">at line 124</div>
+        <div class="location">at line 53</div>
         <code>            public            mixed
     <strong>visitLogicalAnd</strong>(<a href="../../../Icecave/Dialekt/AST/LogicalAnd.html"><abbr title="Icecave\Dialekt\AST\LogicalAnd">LogicalAnd</abbr></a> $node)</code>
     </h3>
@@ -401,7 +246,7 @@
     </div>
 
                 <h3 id="method_visitLogicalOr">
-        <div class="location">at line 144</div>
+        <div class="location">at line 73</div>
         <code>            public            mixed
     <strong>visitLogicalOr</strong>(<a href="../../../Icecave/Dialekt/AST/LogicalOr.html"><abbr title="Icecave\Dialekt\AST\LogicalOr">LogicalOr</abbr></a> $node)</code>
     </h3>
@@ -437,7 +282,7 @@
     </div>
 
                 <h3 id="method_visitLogicalNot">
-        <div class="location">at line 164</div>
+        <div class="location">at line 93</div>
         <code>            public            mixed
     <strong>visitLogicalNot</strong>(<a href="../../../Icecave/Dialekt/AST/LogicalNot.html"><abbr title="Icecave\Dialekt\AST\LogicalNot">LogicalNot</abbr></a> $node)</code>
     </h3>
@@ -473,7 +318,7 @@
     </div>
 
                 <h3 id="method_visitTag">
-        <div class="location">at line 178</div>
+        <div class="location">at line 107</div>
         <code>            public            mixed
     <strong>visitTag</strong>(<a href="../../../Icecave/Dialekt/AST/Tag.html"><abbr title="Icecave\Dialekt\AST\Tag">Tag</abbr></a> $node)</code>
     </h3>
@@ -509,7 +354,7 @@
     </div>
 
                 <h3 id="method_visitPattern">
-        <div class="location">at line 196</div>
+        <div class="location">at line 134</div>
         <code>            public            mixed
     <strong>visitPattern</strong>(<a href="../../../Icecave/Dialekt/AST/Pattern.html"><abbr title="Icecave\Dialekt\AST\Pattern">Pattern</abbr></a> $node)</code>
     </h3>
@@ -545,7 +390,7 @@
     </div>
 
                 <h3 id="method_visitPatternLiteral">
-        <div class="location">at line 222</div>
+        <div class="location">at line 164</div>
         <code>            public            mixed
     <strong>visitPatternLiteral</strong>(<a href="../../../Icecave/Dialekt/AST/PatternLiteral.html"><abbr title="Icecave\Dialekt\AST\PatternLiteral">PatternLiteral</abbr></a> $node)</code>
     </h3>
@@ -581,7 +426,7 @@
     </div>
 
                 <h3 id="method_visitPatternWildcard">
-        <div class="location">at line 236</div>
+        <div class="location">at line 176</div>
         <code>            public            mixed
     <strong>visitPatternWildcard</strong>(<a href="../../../Icecave/Dialekt/AST/PatternWildcard.html"><abbr title="Icecave\Dialekt\AST\PatternWildcard">PatternWildcard</abbr></a> $node)</code>
     </h3>
@@ -617,7 +462,7 @@
     </div>
 
                 <h3 id="method_visitEmptyExpression">
-        <div class="location">at line 250</div>
+        <div class="location">at line 190</div>
         <code>            public            mixed
     <strong>visitEmptyExpression</strong>(<a href="../../../Icecave/Dialekt/AST/EmptyExpression.html"><abbr title="Icecave\Dialekt\AST\EmptyExpression">EmptyExpression</abbr></a> $node)</code>
     </h3>
