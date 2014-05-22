@@ -44,11 +44,11 @@
             </tr>
                     <tr>
                 <td class="type">
-                    boolean
+                    <a href="../../../Icecave/Dialekt/Evaluator/EvaluationResult.html"><abbr title="Icecave\Dialekt\Evaluator\EvaluationResult">EvaluationResult</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_evaluate">evaluate</a>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, <abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr> $tags)
-                    <p>Evaluate an expression against a single tag.</p>
+                    <p>Evaluate an expression against a set of tags.</p>
                 </td>
                 <td></td>
             </tr>
@@ -171,11 +171,11 @@
 
                 <h3 id="method_evaluate">
         <div class="location">at line 35</div>
-        <code>            public            boolean
+        <code>            public            <a href="../../../Icecave/Dialekt/Evaluator/EvaluationResult.html"><abbr title="Icecave\Dialekt\Evaluator\EvaluationResult">EvaluationResult</abbr></a>
     <strong>evaluate</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, <abbr title="Icecave\Dialekt\Evaluator\mixed&lt;string&gt;">mixed&lt;string&gt;</abbr> $tags)</code>
     </h3>
     <div class="details">
-        <p>Evaluate an expression against a single tag.</p>
+        <p>Evaluate an expression against a set of tags.</p>
         <p>
 </p>
         <div class="tags">
@@ -199,8 +199,8 @@
 
                     <table>
         <tr>
-            <td>boolean</td>
-            <td>True if the expression matches the given tag; otherwise, false.</td>
+            <td><a href="../../../Icecave/Dialekt/Evaluator/EvaluationResult.html"><abbr title="Icecave\Dialekt\Evaluator\EvaluationResult">EvaluationResult</abbr></a></td>
+            <td>The result of the evaluation.</td>
         </tr>
     </table>
 
@@ -210,7 +210,7 @@
     </div>
 
                 <h3 id="method_visitLogicalAnd">
-        <div class="location">at line 53</div>
+        <div class="location">at line 60</div>
         <code>            public            mixed
     <strong>visitLogicalAnd</strong>(<a href="../../../Icecave/Dialekt/AST/LogicalAnd.html"><abbr title="Icecave\Dialekt\AST\LogicalAnd">LogicalAnd</abbr></a> $node)</code>
     </h3>
@@ -246,7 +246,7 @@
     </div>
 
                 <h3 id="method_visitLogicalOr">
-        <div class="location">at line 73</div>
+        <div class="location">at line 98</div>
         <code>            public            mixed
     <strong>visitLogicalOr</strong>(<a href="../../../Icecave/Dialekt/AST/LogicalOr.html"><abbr title="Icecave\Dialekt\AST\LogicalOr">LogicalOr</abbr></a> $node)</code>
     </h3>
@@ -282,7 +282,7 @@
     </div>
 
                 <h3 id="method_visitLogicalNot">
-        <div class="location">at line 93</div>
+        <div class="location">at line 136</div>
         <code>            public            mixed
     <strong>visitLogicalNot</strong>(<a href="../../../Icecave/Dialekt/AST/LogicalNot.html"><abbr title="Icecave\Dialekt\AST\LogicalNot">LogicalNot</abbr></a> $node)</code>
     </h3>
@@ -318,7 +318,7 @@
     </div>
 
                 <h3 id="method_visitTag">
-        <div class="location">at line 107</div>
+        <div class="location">at line 157</div>
         <code>            public            mixed
     <strong>visitTag</strong>(<a href="../../../Icecave/Dialekt/AST/Tag.html"><abbr title="Icecave\Dialekt\AST\Tag">Tag</abbr></a> $node)</code>
     </h3>
@@ -354,7 +354,7 @@
     </div>
 
                 <h3 id="method_visitPattern">
-        <div class="location">at line 134</div>
+        <div class="location">at line 184</div>
         <code>            public            mixed
     <strong>visitPattern</strong>(<a href="../../../Icecave/Dialekt/AST/Pattern.html"><abbr title="Icecave\Dialekt\AST\Pattern">Pattern</abbr></a> $node)</code>
     </h3>
@@ -390,7 +390,7 @@
     </div>
 
                 <h3 id="method_visitPatternLiteral">
-        <div class="location">at line 164</div>
+        <div class="location">at line 213</div>
         <code>            public            mixed
     <strong>visitPatternLiteral</strong>(<a href="../../../Icecave/Dialekt/AST/PatternLiteral.html"><abbr title="Icecave\Dialekt\AST\PatternLiteral">PatternLiteral</abbr></a> $node)</code>
     </h3>
@@ -426,7 +426,7 @@
     </div>
 
                 <h3 id="method_visitPatternWildcard">
-        <div class="location">at line 176</div>
+        <div class="location">at line 225</div>
         <code>            public            mixed
     <strong>visitPatternWildcard</strong>(<a href="../../../Icecave/Dialekt/AST/PatternWildcard.html"><abbr title="Icecave\Dialekt\AST\PatternWildcard">PatternWildcard</abbr></a> $node)</code>
     </h3>
@@ -462,7 +462,7 @@
     </div>
 
                 <h3 id="method_visitEmptyExpression">
-        <div class="location">at line 190</div>
+        <div class="location">at line 239</div>
         <code>            public            mixed
     <strong>visitEmptyExpression</strong>(<a href="../../../Icecave/Dialekt/AST/EmptyExpression.html"><abbr title="Icecave\Dialekt\AST\EmptyExpression">EmptyExpression</abbr></a> $node)</code>
     </h3>

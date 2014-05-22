@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="robots" content="index, follow, all" />
+        <title>Icecave\Dialekt\Evaluator\ExpressionResult | icecave/dialekt API</title>
+                    <link rel="stylesheet" type="text/css" href="../../../stylesheet.css">
+                            </head>
+        <body id="class">
+            <div class="header">
+        <ul>
+            <li><a href="../../../classes.html">Classes</a></li>
+                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+            <li><a href="../../../doc-index.html">Index</a></li>
+            
+        </ul>
+
+        <div id="title">icecave/dialekt API</div>
+
+            <div class="type">Class</div>
+    <h1><a href="../../../Icecave/Dialekt/Evaluator.html">Icecave\Dialekt\Evaluator</a>\ExpressionResult</h1>
+    </div>
+        <div class="content">
+                <p>class    <strong>ExpressionResult</strong></p>
+
+            <div class="description">
+            <p>The result for an invidiual expression in the AST.</p>
+            <p>
+</p>
+        </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <table>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, boolean $isMatch, array $matchedTags, array $unmatchedTags)
+                    <p>
+</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    <a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a>
+                </td>
+                <td class="last">
+                    <a href="#method_expression">expression</a>()
+                    <p>Fetch the expression to which this result applies.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_isMatch">isMatch</a>()
+                    <p>Indicates whether or not the expression matched the tag set.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_matchedTags">matchedTags</a>()
+                    <p>Fetch the set of tags that matched.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method_unmatchedTags">unmatchedTags</a>()
+                    <p>Fetch set of tags that did not match.</p>
+                </td>
+                <td></td>
+            </tr>
+            </table>
+
+
+        <h2>Details</h2>
+
+                        <h3 id="method___construct">
+        <div class="location">at line 17</div>
+        <code>            public            
+    <strong>__construct</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression, boolean $isMatch, array $matchedTags, array $unmatchedTags)</code>
+    </h3>
+    <div class="details">
+        <p>
+</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a></td>
+                <td>$expression</td>
+                <td>The expression to which this result applies.</td>
+            </tr>
+                    <tr>
+                <td>boolean</td>
+                <td>$isMatch</td>
+                <td>True if the expression matched the tag set; otherwise, false.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$matchedTags</td>
+                <td>The set of tags that matched.</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$unmatchedTags</td>
+                <td>The set of tags that did not match.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_expression">
+        <div class="location">at line 34</div>
+        <code>            public            <a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a>
+    <strong>expression</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the expression to which this result applies.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a></td>
+            <td>The expression to which this result applies.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_isMatch">
+        <div class="location">at line 44</div>
+        <code>            public            boolean
+    <strong>isMatch</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Indicates whether or not the expression matched the tag set.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if the expression matched the tag set; otherwise, false.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_matchedTags">
+        <div class="location">at line 54</div>
+        <code>            public            
+    <strong>matchedTags</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the set of tags that matched.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_unmatchedTags">
+        <div class="location">at line 64</div>
+        <code>            public            
+    <strong>unmatchedTags</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch set of tags that did not match.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+    
+            </div>
+            <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+    </div>
+    </body>
+</html>
