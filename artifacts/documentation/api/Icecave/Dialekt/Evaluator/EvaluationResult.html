@@ -61,7 +61,7 @@
                     <a href="../../../Icecave/Dialekt/Evaluator/ExpressionResult.html"><abbr title="Icecave\Dialekt\Evaluator\ExpressionResult">ExpressionResult</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_expressionResult">expressionResult</a>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression)
+                    <a href="#method_resultOf">resultOf</a>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression)
                     <p>Fetch the result for an individual expression node from the AST.</p>
                 </td>
                 <td></td>
@@ -72,7 +72,7 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 16</div>
+        <div class="location">at line 17</div>
         <code>            public            
     <strong>__construct</strong>(boolean $isMatch, array $expressionResults)</code>
     </h3>
@@ -104,7 +104,7 @@
     </div>
 
                 <h3 id="method_isMatch">
-        <div class="location">at line 31</div>
+        <div class="location">at line 32</div>
         <code>            public            boolean
     <strong>isMatch</strong>()</code>
     </h3>
@@ -128,10 +128,10 @@
                     </div>
     </div>
 
-                <h3 id="method_expressionResult">
-        <div class="location">at line 43</div>
+                <h3 id="method_resultOf">
+        <div class="location">at line 45</div>
         <code>            public            <a href="../../../Icecave/Dialekt/Evaluator/ExpressionResult.html"><abbr title="Icecave\Dialekt\Evaluator\ExpressionResult">ExpressionResult</abbr></a>
-    <strong>expressionResult</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression)</code>
+    <strong>resultOf</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression)</code>
     </h3>
     <div class="details">
         <p>Fetch the result for an individual expression node from the AST.</p>
@@ -159,6 +159,15 @@
     </table>
 
             
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/UnexpectedValueException"><abbr title="UnexpectedValueException">UnexpectedValueException</abbr></a></td>
+                <td>if there is no result for the given expression.</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
