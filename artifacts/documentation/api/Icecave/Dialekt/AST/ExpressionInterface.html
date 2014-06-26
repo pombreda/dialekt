@@ -45,6 +45,36 @@
                 </td>
                 <td><small>from&nbsp;<a href="../../../Icecave/Dialekt/AST/NodeInterface.html#method_accept"><abbr title="Icecave\Dialekt\AST\NodeInterface">NodeInterface</abbr></a></small></td>
             </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_source">source</a>()
+                    <p>Fetch the original source code of this expression.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    integer
+                </td>
+                <td class="last">
+                    <a href="#method_sourceOffset">sourceOffset</a>()
+                    <p>Fetch the index of the first character of this expression in the source code.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    boolean
+                </td>
+                <td class="last">
+                    <a href="#method_hasSource">hasSource</a>()
+                    <p>Indiciates whether or not the expression contains information about the original source of the expression.</p>
+                </td>
+                <td></td>
+            </tr>
             </table>
 
 
@@ -77,6 +107,99 @@
         <tr>
             <td>mixed</td>
             <td>The visitation result.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_source">
+        <div class="location">at line 17</div>
+        <code>            public            string
+    <strong>source</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the original source code of this expression.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The original source code of this expression.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/LogicException"><abbr title="LogicException">LogicException</abbr></a></td>
+                <td>if the source has not been captured by the parser.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_sourceOffset">
+        <div class="location">at line 25</div>
+        <code>            public            integer
+    <strong>sourceOffset</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Fetch the index of the first character of this expression in the source code.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>integer</td>
+            <td>The index of the first character of this expression in the source code.</td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="http://php.net/LogicException"><abbr title="LogicException">LogicException</abbr></a></td>
+                <td>if the source has not been captured by the parser.</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+                <h3 id="method_hasSource">
+        <div class="location">at line 33</div>
+        <code>            public            boolean
+    <strong>hasSource</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Indiciates whether or not the expression contains information about the original source of the expression.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>boolean</td>
+            <td>True if the source/offset has been captured; otherwise, false.</td>
         </tr>
     </table>
 
