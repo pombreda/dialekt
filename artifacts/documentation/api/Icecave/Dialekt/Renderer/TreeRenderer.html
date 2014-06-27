@@ -38,6 +38,26 @@
             <table>
                     <tr>
                 <td class="type">
+                    
+                </td>
+                <td class="last">
+                    <a href="#method___construct">__construct</a>(string|null $endOfLine = null)
+                    <p>Construct a new tree renderer,</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
+                    string
+                </td>
+                <td class="last">
+                    <a href="#method_endOfLine">endOfLine</a>()
+                    <p>Get the end-of-line string.</p>
+                </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type">
                     string
                 </td>
                 <td class="last">
@@ -131,8 +151,59 @@
 
         <h2>Details</h2>
 
-                        <h3 id="method_render">
-        <div class="location">at line 28</div>
+                        <h3 id="method___construct">
+        <div class="location">at line 26</div>
+        <code>            public            
+    <strong>__construct</strong>(string|null $endOfLine = null)</code>
+    </h3>
+    <div class="details">
+        <p>Construct a new tree renderer,</p>
+        <p>
+</p>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td>string|null</td>
+                <td>$endOfLine</td>
+                <td>The end-of-line string to use.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_endOfLine">
+        <div class="location">at line 41</div>
+        <code>            public            string
+    <strong>endOfLine</strong>()</code>
+    </h3>
+    <div class="details">
+        <p>Get the end-of-line string.</p>
+        <p>
+</p>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>string</td>
+            <td>The end-of-line string.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+                <h3 id="method_render">
+        <div class="location">at line 53</div>
         <code>            public            string
     <strong>render</strong>(<a href="../../../Icecave/Dialekt/AST/ExpressionInterface.html"><abbr title="Icecave\Dialekt\AST\ExpressionInterface">ExpressionInterface</abbr></a> $expression)</code>
     </h3>
@@ -167,7 +238,7 @@
     </div>
 
                 <h3 id="method_visitLogicalAnd">
-        <div class="location">at line 42</div>
+        <div class="location">at line 67</div>
         <code>            public            mixed
     <strong>visitLogicalAnd</strong>(<a href="../../../Icecave/Dialekt/AST/LogicalAnd.html"><abbr title="Icecave\Dialekt\AST\LogicalAnd">LogicalAnd</abbr></a> $node)</code>
     </h3>
@@ -203,7 +274,7 @@
     </div>
 
                 <h3 id="method_visitLogicalOr">
-        <div class="location">at line 56</div>
+        <div class="location">at line 81</div>
         <code>            public            mixed
     <strong>visitLogicalOr</strong>(<a href="../../../Icecave/Dialekt/AST/LogicalOr.html"><abbr title="Icecave\Dialekt\AST\LogicalOr">LogicalOr</abbr></a> $node)</code>
     </h3>
@@ -239,7 +310,7 @@
     </div>
 
                 <h3 id="method_visitLogicalNot">
-        <div class="location">at line 70</div>
+        <div class="location">at line 95</div>
         <code>            public            mixed
     <strong>visitLogicalNot</strong>(<a href="../../../Icecave/Dialekt/AST/LogicalNot.html"><abbr title="Icecave\Dialekt\AST\LogicalNot">LogicalNot</abbr></a> $node)</code>
     </h3>
@@ -275,7 +346,7 @@
     </div>
 
                 <h3 id="method_visitTag">
-        <div class="location">at line 86</div>
+        <div class="location">at line 111</div>
         <code>            public            mixed
     <strong>visitTag</strong>(<a href="../../../Icecave/Dialekt/AST/Tag.html"><abbr title="Icecave\Dialekt\AST\Tag">Tag</abbr></a> $node)</code>
     </h3>
@@ -311,7 +382,7 @@
     </div>
 
                 <h3 id="method_visitPattern">
-        <div class="location">at line 100</div>
+        <div class="location">at line 125</div>
         <code>            public            mixed
     <strong>visitPattern</strong>(<a href="../../../Icecave/Dialekt/AST/Pattern.html"><abbr title="Icecave\Dialekt\AST\Pattern">Pattern</abbr></a> $node)</code>
     </h3>
@@ -347,7 +418,7 @@
     </div>
 
                 <h3 id="method_visitPatternLiteral">
-        <div class="location">at line 114</div>
+        <div class="location">at line 139</div>
         <code>            public            mixed
     <strong>visitPatternLiteral</strong>(<a href="../../../Icecave/Dialekt/AST/PatternLiteral.html"><abbr title="Icecave\Dialekt\AST\PatternLiteral">PatternLiteral</abbr></a> $node)</code>
     </h3>
@@ -383,7 +454,7 @@
     </div>
 
                 <h3 id="method_visitPatternWildcard">
-        <div class="location">at line 128</div>
+        <div class="location">at line 153</div>
         <code>            public            mixed
     <strong>visitPatternWildcard</strong>(<a href="../../../Icecave/Dialekt/AST/PatternWildcard.html"><abbr title="Icecave\Dialekt\AST\PatternWildcard">PatternWildcard</abbr></a> $node)</code>
     </h3>
@@ -419,7 +490,7 @@
     </div>
 
                 <h3 id="method_visitEmptyExpression">
-        <div class="location">at line 142</div>
+        <div class="location">at line 167</div>
         <code>            public            mixed
     <strong>visitEmptyExpression</strong>(<a href="../../../Icecave/Dialekt/AST/EmptyExpression.html"><abbr title="Icecave\Dialekt\AST\EmptyExpression">EmptyExpression</abbr></a> $node)</code>
     </h3>
