@@ -47,31 +47,31 @@
             </tr>
                     <tr>
                 <td class="type">
-                    string
+                    <a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a>|null
                 </td>
                 <td class="last">
-                    <a href="#method_source">source</a>()
-                    <p>Fetch the original source code of this expression.</p>
+                    <a href="#method_firstToken">firstToken</a>()
+                    <p>Fetch the first token from the source that is part of this expression.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    integer
+                    <a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a>|null
                 </td>
                 <td class="last">
-                    <a href="#method_sourceOffset">sourceOffset</a>()
-                    <p>Fetch the index of the first character of this expression in the source code.</p>
+                    <a href="#method_lastToken">lastToken</a>()
+                    <p>Fetch the last token from the source that is part of this expression.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    boolean
+                    
                 </td>
                 <td class="last">
-                    <a href="#method_hasSource">hasSource</a>()
-                    <p>Indiciates whether or not the expression contains information about the original source of the expression.</p>
+                    <a href="#method_setTokens">setTokens</a>(<a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a> $firstToken, <a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a> $lastToken)
+                    <p>Set the delimiting tokens for this expression.</p>
                 </td>
                 <td></td>
             </tr>
@@ -115,13 +115,13 @@
                     </div>
     </div>
 
-                <h3 id="method_source">
-        <div class="location">at line 17</div>
-        <code>            public            string
-    <strong>source</strong>()</code>
+                <h3 id="method_firstToken">
+        <div class="location">at line 18</div>
+        <code>            public            <a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a>|null
+    <strong>firstToken</strong>()</code>
     </h3>
     <div class="details">
-        <p>Fetch the original source code of this expression.</p>
+        <p>Fetch the first token from the source that is part of this expression.</p>
         <p>
 </p>
         <div class="tags">
@@ -130,32 +130,23 @@
 
                     <table>
         <tr>
-            <td>string</td>
-            <td>The original source code of this expression.</td>
+            <td><a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a>|null</td>
+            <td>The first token from this expression.</td>
         </tr>
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table>
-                    <tr>
-                <td><a href="http://php.net/LogicException"><abbr title="LogicException">LogicException</abbr></a></td>
-                <td>if the source has not been captured by the parser.</td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
 
-                <h3 id="method_sourceOffset">
+                <h3 id="method_lastToken">
         <div class="location">at line 25</div>
-        <code>            public            integer
-    <strong>sourceOffset</strong>()</code>
+        <code>            public            <a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a>|null
+    <strong>lastToken</strong>()</code>
     </h3>
     <div class="details">
-        <p>Fetch the index of the first character of this expression in the source code.</p>
+        <p>Fetch the last token from the source that is part of this expression.</p>
         <p>
 </p>
         <div class="tags">
@@ -164,45 +155,42 @@
 
                     <table>
         <tr>
-            <td>integer</td>
-            <td>The index of the first character of this expression in the source code.</td>
+            <td><a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a>|null</td>
+            <td>The last token from this expression.</td>
         </tr>
     </table>
 
             
-                            <h4>Exceptions</h4>
-
-                    <table>
-                    <tr>
-                <td><a href="http://php.net/LogicException"><abbr title="LogicException">LogicException</abbr></a></td>
-                <td>if the source has not been captured by the parser.</td>
-            </tr>
-            </table>
-
             
                     </div>
     </div>
 
-                <h3 id="method_hasSource">
+                <h3 id="method_setTokens">
         <div class="location">at line 33</div>
-        <code>            public            boolean
-    <strong>hasSource</strong>()</code>
+        <code>            public            
+    <strong>setTokens</strong>(<a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a> $firstToken, <a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a> $lastToken)</code>
     </h3>
     <div class="details">
-        <p>Indiciates whether or not the expression contains information about the original source of the expression.</p>
+        <p>Set the delimiting tokens for this expression.</p>
         <p>
 </p>
         <div class="tags">
-            
-                            <h4>Return Value</h4>
+                            <h4>Parameters</h4>
 
                     <table>
-        <tr>
-            <td>boolean</td>
-            <td>True if the source/offset has been captured; otherwise, false.</td>
-        </tr>
-    </table>
+                    <tr>
+                <td><a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a></td>
+                <td>$firstToken</td>
+                <td>The first token from this expression.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../Icecave/Dialekt/Parser/Token.html"><abbr title="Icecave\Dialekt\Parser\Token">Token</abbr></a></td>
+                <td>$lastToken</td>
+                <td>The last token from this expression.</td>
+            </tr>
+            </table>
 
+            
             
             
                     </div>
